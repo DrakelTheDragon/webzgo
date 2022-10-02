@@ -1,8 +1,8 @@
-package middleware
+package handlers
 
 import "net/http"
 
-type Interface interface {
+type Middleware interface {
 	Wrap(next http.Handler) http.Handler
 }
 
